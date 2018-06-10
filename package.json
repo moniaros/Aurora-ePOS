@@ -1,0 +1,27 @@
+{
+  "name": "aurora-epos",
+  "version": "1.0.0",
+  "description": "Build with express for backend and React frontend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0m3k/Aurora-ePOS.git"
+  },
+  "author": "Tomasz Tracz",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/t0m3k/Aurora-ePOS/issues"
+  },
+  "homepage": "https://github.com/t0m3k/Aurora-ePOS#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.2",
+    "mongoose": "^5.1.4"
+  }
+}
