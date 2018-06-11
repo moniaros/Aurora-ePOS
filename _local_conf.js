@@ -1,8 +1,7 @@
 // CONFIG HERE
-const   host = "localhost",
-        port = "8080",
-        mongoDB = "mongodb://localhost/user",
-        secret = "some secret sentence";
+const   port = '8080',
+    mongoDB = 'mongodb://localhost/user',
+    secret = 'some secret sentence'
 
 
 
@@ -10,14 +9,12 @@ const   host = "localhost",
 
 // END OF CONFIG
 
-const localConf = {};
+const localConf = {}
 
-localConf.HOST = host;
+localConf.PORT = port
 
-localConf.PORT = port;
+localConf.MONGODB = mongoDB
 
-localConf.MONGODB = mongoDB;
+localConf.SECRET = secret
 
-localConf.SECRET = secret;
-
-module.exports = localConf;
+module.exports = localConf

@@ -1,9 +1,12 @@
-var express                 = require('express'),
+const express                 = require('express'),
     bodyParser              = require('body-parser'),
     mongoose                = require('mongoose'),
     path                    = require('path')
 
 const LOCALCONF             = require('./local_conf.js')
+
+// ROUTES INIT
+var usersRoutes = require('./src/routes/user')
 
 var app = express()
 
@@ -22,7 +25,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client')))
 
-
+// ROUTES USE
+app.use('/api/users', usersRoutes)
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/client/index.html'))
