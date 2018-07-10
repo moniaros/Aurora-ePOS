@@ -4,9 +4,6 @@ const   port = '8080',
     secret = 'some secret sentence'
 
 
-
-
-
 // END OF CONFIG
 
 const localConf = {}
