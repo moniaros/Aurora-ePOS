@@ -17,7 +17,7 @@ const PORT = process.env.PORT || LOCALCONF.PORT
 const MONGODB = LOCALCONF.MONGODB
 
 // CUSTOM SETTINGS
-mongoose.connect(MONGODB)
+mongoose.connect(MONGODB, { useNewUrlParser: true })
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
