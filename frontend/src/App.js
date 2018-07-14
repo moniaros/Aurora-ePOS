@@ -1,12 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Login from './routes/login'
+import Header from './routes/header'
 import { Container } from 'reactstrap'
 
 class App extends Component {
     render() {
         return (
-            <Container>
-                Test three
-            </Container>
+            <Fragment>
+                <Header />
+                <Container>
+                    <Login />
+                </Container>
+            </Fragment>
         )
     }
 }
