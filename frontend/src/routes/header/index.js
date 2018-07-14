@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {
     Collapse,
+    Container,
     Navbar,
     NavbarToggler,
     NavbarBrand,
@@ -30,6 +31,7 @@ export class Header extends Component {
     render() {
         return (
             <Navbar color="light" light expand="md">
+            <Container>
                 <NavbarBrand href="/">Aurora ePOS</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
@@ -59,6 +61,8 @@ export class Header extends Component {
                         </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
+            </Container>
+                
             </Navbar>
         )
     }
